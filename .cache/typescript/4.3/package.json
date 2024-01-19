@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "dependencies": {
+    "types-registry": "^0.1.679"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "@types/jquery": "^3.5.18"
+  }
+}

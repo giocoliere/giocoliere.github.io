@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Averta';
+    src: url('Averta-Bold.eot');
+    src: local('Averta Bold'), local('Averta-Bold'),
+        url('Averta-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Averta-Bold.woff2') format('woff2'),
+        url('Averta-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('Averta-Regular.eot');
+    src: local('Averta Regular'), local('Averta-Regular'),
+        url('Averta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Averta-Regular.woff2') format('woff2'),
+        url('Averta-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('Averta-Semibold.eot');
+    src: local('Averta Semibold'), local('Averta-Semibold'),
+        url('Averta-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Averta-Semibold.woff2') format('woff2'),
+        url('Averta-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('Averta-Black.eot');
+    src: local('Averta Black'), local('Averta-Black'),
+        url('Averta-Black.eot?#iefix') format('embedded-opentype'),
+        url('Averta-Black.woff2') format('woff2'),
+        url('Averta-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('Averta-Extrabold.eot');
+    src: local('Averta Extrabold'), local('Averta-Extrabold'),
+        url('Averta-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('Averta-Extrabold.woff2') format('woff2'),
+        url('Averta-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
