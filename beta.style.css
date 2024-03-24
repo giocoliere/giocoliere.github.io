@@ -4,7 +4,7 @@
   padding: 0;
   outline: none;
   box-sizing: border-box;
-  font-family: 'VT323', latin;
+  font-family: 'VT323';
 }
 body{
   height: 100vh;
