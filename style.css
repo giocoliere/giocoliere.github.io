@@ -11,9 +11,60 @@ body{
   background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
   background-size: 400%;
 }
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 15%;
+  right: 15%;
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: #69a6ce;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #69a6ce;
+  color: #69a6ce;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 0.9em;
+}
+
+.nav-links a:hover {
+  background: #69a6ce;
+  color: #fff;
+}
+
 #error-page{
   position: absolute;
-  top: 10%;
+  top: calc(10% + 80px);
   left: 15%;
   right: 15%;
   bottom: 10%;
@@ -31,6 +82,8 @@ body{
   font-size: 18vw;
   line-height: 1em;
   position: relative;
+  display: inline-block; /* Added this */
+  width: 100%; /* Added this */
 }
 .content h2.header:after{
   position: absolute;
@@ -38,6 +91,8 @@ body{
   top: 0;
   left: 0;
   right: 0;
+  width: 100%; /* Added this */
+  height: 100%; /* Added this */
   background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
   background-size: 400%;
   -webkit-background-clip: text;
@@ -88,10 +143,12 @@ body{
 .content .btns{
   margin: 25px 0;
   display: inline-flex;
+  flex-wrap: wrap; /* Added for better mobile responsiveness */
+  justify-content: center; /* Added for better mobile responsiveness */
+  gap: 10px; /* Added for better spacing */
 }
 .content .btns a{
   display: inline-block;
-  margin: 0 10px;
   text-decoration: none;
   border: 2px solid #69a6ce;
   color: #69a6ce;
@@ -104,4 +161,47 @@ body{
 .content .btns a:hover{
   background: #69a6ce;
   color: #fff;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    left: 5%;
+    right: 5%;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    justify-content: center;
+  }
+  
+  .nav-links a {
+    padding: 6px 15px;
+    font-size: 0.8em;
+  }
+  
+  #error-page {
+    left: 5%;
+    right: 5%;
+  }
+
+  .content h2.header {
+    font-size: 24vw; /* Larger font size for mobile */
+  }
+
+  .content h4 {
+    font-size: 1.5em; /* Adjusted for mobile */
+  }
+
+  .content .btns {
+    flex-direction: column; /* Stack buttons on mobile */
+  }
+
+  .content .btns a {
+    margin: 5px 0; /* Adjust spacing for stacked buttons */
+  }
 }
