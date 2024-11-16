@@ -4,24 +4,132 @@
       <meta name="google-site-verification" content="QJQAaXtkubSD6k7GsK_M7mYlJCaSP4J3JTFoaKU23a0" />
       <meta name="msvalidate.01" content="6FFE13B6249B1706628280EB0489AAE0" />
       <meta name="p:domain_verify" content="c17c1e31cbc2ffedf7fe8ae4366ad722"/>
-      <meta name ="title" content ="Giocoliere | About me"/>
-<meta name ="description" content ="My personal Website"/>
-<meta name ="copyright" content ="Giocoliere"/>
-<meta name ="keywords" content ="Developer, animator, dev, minecraft, musician"/>
-<meta property ="og:type" content ="website"/>
-<meta property ="og:url" content ="gioco.is-a.dev"/>
-<meta property ="og:title" content ="Giocoliere | About me"/>
-<meta property ="og:description" content ="My personal Website"/>
-<meta property ="og:image" content ="/assets/img/favicon.ico"/>
-<meta property ="twitter:card" content ="summary_large_image"/>
-<meta property ="twitter:url" content ="gioco.is-a.dev"/>
-<meta property ="twitter:title" content ="Giocoliere | About me"/>
-<meta property ="twitter:description" content ="My personal Website"/>
-<meta property ="twitter:image" content ="/assets/img/favicon.ico"/>
+      <meta name="title" content="Giocoliere | About me"/>
+      <meta name="description" content="My personal Website"/>
+      <meta name="copyright" content="Giocoliere"/>
+      <meta name="keywords" content="Developer, animator, dev, minecraft, musician"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="gioco.lol"/>
+      <meta property="og:title" content="Giocoliere | About me"/>
+      <meta property="og:description" content="My personal Website"/>
+      <meta property="og:image" content="/assets/img/favicon.ico"/>
+      <meta property="twitter:card" content="summary_large_image"/>
+      <meta property="twitter:url" content="gioco.lol"/>
+      <meta property="twitter:title" content="Giocoliere | About me"/>
+      <meta property="twitter:description" content="My personal Website"/>
+      <meta property="twitter:image" content="/assets/img/favicon.ico"/>
       <title>404 Error | Giocoliere</title>
       <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-     <link rel="shortcut icon" href="/assets/img/favicon.ico"/>
-      <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="/assets/img/favicon.ico"/>
+      <style>
+         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+         * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+         }
+         body {
+            height: 100vh;
+            background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
+            background-size: 400%;
+         }
+         #error-page {
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            right: 15%;
+            bottom: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+         }
+         #error-page .content {
+            max-width: 600px;
+            text-align: center;
+         }
+         .content h2.header {
+            font-size: 18vw;
+            line-height: 1em;
+            position: relative;
+         }
+         .content h2.header:after {
+            position: absolute;
+            content: attr(data-text);
+            top: 0;
+            left: 0;
+            right: 0;
+            background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
+            background-size: 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.25);
+            animation: animate 10s ease-in-out infinite;
+         }
+         @keyframes animate {
+            0% {
+               background-position: 0 0;
+            }
+            25% {
+               background-position: 100% 0;
+            }
+            50% {
+               background-position: 100% 100%;
+            }
+            75% {
+               background-position: 0% 100%;
+            }
+            100% {
+               background-position: 0% 0%;
+            }
+         }
+         .content h4 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #000;
+            font-size: 2em;
+            max-width: 600px;
+            position: relative;
+         }
+         .content h4:after {
+            position: absolute;
+            content: attr(data-text);
+            top: 0;
+            left: 0;
+            right: 0;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+         .content p {
+            font-size: 1.2em;
+            color: #0d0d0d;
+         }
+         .content .btns {
+            margin: 25px 0;
+            display: inline-flex;
+         }
+         .content .btns a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            border: 2px solid #69a6ce;
+            color: #69a6ce;
+            font-weight: 500;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+         }
+         .content .btns a:hover {
+            background: #69a6ce;
+            color: #fff;
+         }
+      </style>
    </head>
    <body>
       <div id="error-page">
@@ -34,16 +142,15 @@
             </h4>
             <p>
                Sorry... I wanted to troll you a bit.😜 Anyway I'm a developer and I'm currently working on a big project.
-
             </p>
             <script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-f53f2efc-bf42-4d44-8b42-aae7e8d982d4" data-elfsight-app-lazy></div>
+            <div class="elfsight-app-f53f2efc-bf42-4d44-8b42-aae7e8d982d4" data-elfsight-app-lazy></div>
             <div class="btns">
                <a href="https://status.creepercraft.eu.org/">Creepercraft Status</a>
                <a href="mailto://giocoliere@proton.me">Contact me</a>
-              <a href="https://guilded.gg/u/gioco">  Guilded profile</a>
-              <a href="https://discord.com/users/842087107908206654">Discord profile</a>
-                 <a rel="me" href="https://mas.to/@gioco">Mastodon</a>
+               <a href="https://guilded.gg/u/gioco">Guilded profile</a>
+               <a href="https://discord.com/users/842087107908206654">Discord profile</a>
+               <a rel="me" href="https://mas.to/@gioco">Mastodon</a>
             </div>
          </div>
       </div>
