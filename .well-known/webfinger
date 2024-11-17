@@ -1,0 +1,28 @@
+{
+    "subject": "acct:gioco@mas.to",
+    "aliases": [
+      "https://mas.to/@gioco",
+      "https://mas.to/users/gioco"
+    ],
+    "links": [
+      {
+        "rel": "http://webfinger.net/rel/profile-page",
+        "type": "text/html",
+        "href": "https://mas.to/@gioco"
+      },
+      {
+        "rel": "self",
+        "type": "application/activity+json",
+        "href": "https://mas.to/users/gioco"
+      },
+      {
+        "rel": "http://ostatus.org/schema/1.0/subscribe",
+        "template": "https://mas.to/authorize_interaction?uri={uri}"
+      },
+      {
+        "rel": "http://webfinger.net/rel/avatar",
+        "type": "image/gif",
+        "href": "https://media.mas.to/accounts/avatars/111/719/672/425/284/722/original/565b083dadfe4fd2.gif"
+      }
+    ]
+  }
