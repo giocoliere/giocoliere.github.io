@@ -1,4 +1,3 @@
-// JavaScript
 const cursor = document.createElement('div');
 cursor.classList.add('custom-cursor');
 document.body.appendChild(cursor);
@@ -20,7 +19,6 @@ function animate() {
   currentY += (cursorY - currentY) * ease;
   
   cursor.style.transform = `translate(${currentX - 10}px, ${currentY - 10}px)`;
-  
   requestAnimationFrame(animate);
 }
 
