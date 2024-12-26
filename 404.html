@@ -49,6 +49,7 @@
   outline: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  cursor: none;
 }
 
 body {
@@ -208,6 +209,17 @@ body {
   color: #fff;
 }
 
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+
 @media (max-width: 768px) {
   .navbar {
     left: 5%;
@@ -281,5 +293,10 @@ body {
                 <a href="mailto://giocoliere@proton.me">Email</a>
                 <a rel="me" href="https://guns.lol/gioco">🔫.lol</a>
                 <a href="https://discord.com/users/842087107908206654">DS profile</a>
+              </div>
             </div>
         </div>
+        <script src="/script.js"></script>
+    </body>
+    </html>
+    

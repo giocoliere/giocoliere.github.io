@@ -6,6 +6,7 @@
   outline: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  cursor: none;
 }
 
 body {
@@ -163,6 +164,17 @@ body {
 .content .btns a:hover {
   background: #69a6ce;
   color: #fff;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 9999;
 }
 
 @media (max-width: 768px) {
