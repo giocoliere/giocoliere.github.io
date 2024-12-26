@@ -42,20 +42,21 @@
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
     <style>
        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
   height: 100vh;
   background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
   background-size: 400%;
 }
 
-/* Navbar Styles */
 .navbar {
   position: fixed;
   top: 20px;
@@ -105,7 +106,7 @@ body{
   color: #fff;
 }
 
-#error-page{
+#error-page {
   position: absolute;
   top: calc(10% + 80px);
   left: 15%;
@@ -116,26 +117,30 @@ body{
   justify-content: center;
   background: #fff;
   box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  border-radius: 25px;
 }
-#error-page .content{
+
+.content {
   max-width: 600px;
   text-align: center;
 }
-.content h2.header{
+
+.content h2.header {
   font-size: 18vw;
   line-height: 1em;
   position: relative;
-  display: inline-block; /* Added this */
-  width: 100%; /* Added this */
+  display: inline-block;
+  width: 100%;
 }
-.content h2.header:after{
+
+.content h2.header:after {
   position: absolute;
   content: attr(data-text);
   top: 0;
   left: 0;
   right: 0;
-  width: 100%; /* Added this */
-  height: 100%; /* Added this */
+  width: 100%;
+  height: 100%;
   background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
   background-size: 400%;
   -webkit-background-clip: text;
@@ -143,24 +148,16 @@ body{
   text-shadow: 1px 1px 2px rgba(255,255,255,0.25);
   animation: animate 10s ease-in-out infinite;
 }
+
 @keyframes animate {
-  0%{
-    background-position: 0 0;
-  }
-  25%{
-    background-position: 100% 0;
-  }
-  50%{
-    background-position: 100% 100%;
-  }
-  75%{
-    background-position: 0% 100%;
-  }
-  100%{
-    background-position: 0% 0%;
-  }
+  0% { background-position: 0 0; }
+  25% { background-position: 100% 0; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
 }
-.content h4{
+
+.content h4 {
   font-size: 1.5em;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -169,7 +166,8 @@ body{
   max-width: 600px;
   position: relative;
 }
-.content h4:after{
+
+.content h4:after {
   position: absolute;
   content: attr(data-text);
   top: 0;
@@ -179,18 +177,21 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.content p{
+
+.content p {
   font-size: 1.2em;
   color: #0d0d0d;
 }
-.content .btns{
+
+.content .btns {
   margin: 25px 0;
   display: inline-flex;
-  flex-wrap: wrap; /* Added for better mobile responsiveness */
-  justify-content: center; /* Added for better mobile responsiveness */
-  gap: 10px; /* Added for better spacing */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
-.content .btns a{
+
+.content .btns a {
   display: inline-block;
   text-decoration: none;
   border: 2px solid #69a6ce;
@@ -201,12 +202,12 @@ body{
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-.content .btns a:hover{
+
+.content .btns a:hover {
   background: #69a6ce;
   color: #fff;
 }
 
-/* Mobile responsive adjustments */
 @media (max-width: 768px) {
   .navbar {
     left: 5%;
@@ -230,22 +231,25 @@ body{
   #error-page {
     left: 5%;
     right: 5%;
+    top: calc(10% + 120px);
+    bottom: 5%;
+    padding: 20px;
   }
 
   .content h2.header {
-    font-size: 24vw; /* Larger font size for mobile */
+    font-size: 24vw;
   }
 
   .content h4 {
-    font-size: 1.5em; /* Adjusted for mobile */
+    font-size: 1.5em;
   }
 
   .content .btns {
-    flex-direction: column; /* Stack buttons on mobile */
+    flex-direction: column;
   }
 
   .content .btns a {
-    margin: 5px 0; /* Adjust spacing for stacked buttons */
+    margin: 5px 0;
   }
 }
        </style>
