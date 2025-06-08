@@ -1,4 +1,4 @@
-# Welcome to My wesbsite
+# Welcome to my wesbsite v0.1
 🤓 (the error in the title is intentional) <br>
-(Click the logo of my website to hear my fav music)
-[![Welcome](https://gioco.lol/assets/img/logo.png)](https://gioco.lol/music)
+(Click the logo of my wesbsite)
+[![Welcome](https://gioco.is-a.dev/assets/img/logo.png)](https://gioco.is-a.dev)
